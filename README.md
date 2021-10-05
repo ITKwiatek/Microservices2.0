@@ -1,4 +1,4 @@
-#This project runs Docker
+# This project runs Docker
 
 To build docker :
 docker build -t itkwiatek/platformservice .
@@ -18,7 +18,7 @@ docker start e996d1c46162
 To stop docker:
 docker stop e996d1c46162
 
-#PlatformSerive 
+# PlatformSerive 
 
 To run : 
 dotnet run
