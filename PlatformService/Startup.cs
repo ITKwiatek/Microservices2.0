@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using PlatformService.Data;
+using PlatformService.SyncDataService.Http;
 using PlatoformService;
 
 namespace PlatformService
@@ -33,12 +34,16 @@ namespace PlatformService
                 opt.UseInMemoryDatabase("InMem"));
 
             services.AddScoped<IPlatformRepo, PlatformRepo>();
+            //Add a Client
+            services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
             
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PlatformService", Version = "v1" });
             });
+
+            Console.WriteLine($"--> CommandService Endpoint {Configuration["CommandService"]}");
 
             // Auto Mapper Configurations
             var mapperConfig = new MapperConfiguration(mc =>
