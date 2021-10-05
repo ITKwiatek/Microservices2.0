@@ -18,6 +18,9 @@ docker start e996d1c46162
 To stop docker:
 docker stop e996d1c46162
 
+Kubernetees version:
+kubectl version
+
 # PlatformSerive 
 
 To run : 
