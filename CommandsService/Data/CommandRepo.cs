@@ -4,7 +4,7 @@ using System.Linq;
 using CommandsService.Data;
 using CommandsService.Models;
 
-namespace CommandsService
+namespace CommandsService.Data
 {
     public class CommandRepo : ICommandRepo
     {
