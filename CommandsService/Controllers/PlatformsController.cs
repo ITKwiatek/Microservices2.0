@@ -23,7 +23,7 @@ namespace CommandsService
         [HttpGet]
         public ActionResult<IEnumerable<PlatformReadDto>> GetAllPlatforms()
         {
-            Console.WriteLine("--> Getting platforms from CommandsService");
+            Console.WriteLine("--> Getting platforms from PlatformService");
 
             var platformItems = _repository.GetAllPlatforms();
             

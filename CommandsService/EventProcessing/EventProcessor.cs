@@ -60,7 +60,7 @@ namespace CommandsService.EventProcessing
                 try
                 {
                     var plat = _mapper.Map<Platform>(platformPublishedDto);
-                    if(!repo.ExternalPlatformExistst(plat.ExternalId))
+                    if(!repo.ExternalPlatformExists(plat.ExternalId))
                     {
                         repo.CreatePlatform(plat);
                         repo.SaveChanges();
