@@ -30,10 +30,10 @@ Communication between CommandsService and PlatformService. Using Http/Https/gRPC
 
 ## Screenshots
 ![DockerMap](./doc/docker-map.png)
-![RabbitMQ](./screenshots/communication-with-rabbit.png)
-![RabbitMq-FaoutExchange](./screenshots/RabbitMq-FaoutExchange.png)
-![CommandService](./screenshots/command-srv.png)
-![InsomniaCommands](./screenshots/Insomnia.png)
+![RabbitMQ](./doc/communication-with-rabbit.png)
+![RabbitMq-FaoutExchange](./doc/RabbitMq-FaoutExchange.png)
+![CommandService](./doc/command-srv.png)
+![InsomniaCommands](./doc/Insomnia.png)
 
 
 ## Project Status
