@@ -1,33 +1,43 @@
-# This project runs Docker
+# Microservices Structure
 
-To build docker :
-docker build -t itkwiatek/platformservice .
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Project Status](#project-status)
+* [Contact](#contact)
 
-To run (create new container) docker :
-docker run -p 8080:80 -d itkwiatek/platformservice
 
-To push changes : 
-docker push itkwiatek/platformservice
+## General Information
+Communication between CommandsService and PlatformService. Using Http/Https/gRPC/RabbitMQ. All services are on Docker.
 
-To get docker containers running
-docker ps
+## Technologies Used
+- ASP .NET Core
+- Entity Framework
+- MSSQL
+- In Memory Db
+- gRPC
+- Docker
+- Kubernetes K8S
+- Microservices
+- AutoMapper
 
-To start docker:
-docker start e996d1c46162
+## Features
+- Comunicate between two services using Http/Htpps/gRPC
+- Returning list of Platforms or Services
+- Returning Platofrms/Services by Id
 
-To stop docker:
-docker stop e996d1c46162
+## Screenshots
+![DockerMap](./doc/docker-map.png)
+![RabbitMQ](./doc/communication-with-rabbit.png)
+![RabbitMq-FaoutExchange](./doc/RabbitMq-FaoutExchange.png)
+![CommandService](./doc/command-srv.png)
+![InsomniaCommands](./doc/Insomnia.png)
 
-Kubernetees version:
-kubectl version
 
-# PlatformSerive 
+## Project Status
+Project is: _complete_ 
 
-To run : 
-dotnet run
-
-To stop : 
-ctrl + c
-
-#MSSQL pass:
-pa55word!
+## Contact
+Created by [@ITKwiatek](https://github.com/ITKwiatek/) - feel free to contact me!
