@@ -28,3 +28,6 @@ dotnet run
 
 To stop : 
 ctrl + c
+
+#MSSQL pass:
+pa55word!
